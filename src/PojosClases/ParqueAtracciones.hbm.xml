@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 03-mar-2018 13:28:01 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class catalog="Attractions" name="PojosClases.ParqueAtracciones" optimistic-lock="version" table="ParqueAtracciones">
+    <id name="idParque" type="java.lang.Integer">
+      <column name="idParque"/>
+      <generator class="identity"/>
+    </id>
+    <property name="nombreParque" type="string">
+      <column length="30" name="NombreParque" not-null="true"/>
+    </property>
+    <property name="ciudadParque" type="string">
+      <column name="CiudadParque" not-null="true"/>
+    </property>
+    <property name="presupuesto" type="int">
+      <column name="Presupuesto" not-null="true"/>
+    </property>
+    <property name="idCadena" type="int">
+      <column name="idCadena" not-null="true"/>
+    </property>
+  </class>
+</hibernate-mapping>
